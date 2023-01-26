@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link rel = 'stylesheet' href = 'main.css'>
+    <script defer src = 'main.js'></script>
+</head>
+<body>
+
+    <div>
+        <div style='display: inline-block; margin: 20px 60px 0px 0px; vertical-align: top;'> 
+            <span style='font-size: 15px; display: block;'>Saved filters:</span> 
+            <ul class='scroll_window' id='saved_client_filters' style = 'display: block;'></ul>
+        </div>
+        <div style='display: inline-block; margin: 20px 60px 0px 0px; vertical-align: top;'> 
+            <span style='font-size: 15px; display: block; margin-left: 0px; text-align: left;'>Choose clients for the filter:</span> 
+            <div style = 'display: block;'>
+                <input type='text' id='client_filter_values' placeholder='enter filter values' style='display: inline;'> 
+                <button class='button' id='enter_button_client_filter' style='display: inline;'>Enter</button> 
+            </div>
+        </div>
+        <div style='display: inline-block; margin: 20px 60px 0px 0px;'> 
+            <span style='font-size: 15px; display: block; text-align: left;'>Selected filters:</span>
+            <div style = 'display: block;'>
+                <ul class='scroll_window' id='selected_client_filters' style = 'margin-top: 5px'></ul>
+                <button class='button' id='clear_selected_filters' style='display: inline; vertical-align: top;'>Clear</button> 
+            </div>
+        </div>
+        <div style='display: inline-block; margin: 35px 60px 0px 0px; vertical-align: top;'> 
+            <button class='button' id='save_client_filter' style = 'display: inline;'>Save filter as:</button> 
+            <input type='text' id='save_client_filter_values' placeholder='enter save name' style='display: inline;'> 
+        </div>
+        <div style='display: inline-block; margin: 35px 20px 0px 0px; vertical-align: top;'> 
+            <button class='button' id='apply_client_filter' style='display: inline; vertical-align: top;'>Apply</button> 
+        </div>
+    </div>
+
+</body>
+</html>

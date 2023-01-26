@@ -1,0 +1,137 @@
+@media screen and (max-width: 1500px) {
+    #flexible_graph {
+        overflow: auto
+    }
+}
+
+[data-modal-open] {
+    width: 200px;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.modal {
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: white;
+    width: 800px;
+    max-width: 80%;
+    height: 500px;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) perspective(1px);
+    display: inline-block;
+}
+
+.modal_header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal_header .title {
+    font-size: 20px;
+}
+
+.modal_header .close_button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+    display: inline;
+    pointer-events: all;
+}
+
+[class*='button'] {
+    display: block;
+    margin: 5px 5px 5px 5px !important;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    white-space: normal;
+    word-break: break-all;
+}
+
+[class*='apply'] {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: #cbd3dd !important;
+    color: black !important;
+}
+
+.button.selected:hover {
+    background-color: #cbd3dd !important;
+    color: black !important;
+}
+
+.button:active {
+    background-color: #003c7f !important;
+    color: white !important;
+}
+
+.button.selected:active {
+    background-color: #003c7f !important;
+    color: white !important;
+}
+
+.button.selected {
+    background-color: rgb(99, 156, 199) !important;
+    color: white !important;
+}
+
+[class*='scroll_window'] {
+    max-height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    min-width: 150px;
+    min-height: 30px;
+    overflow-y: auto;
+}
+
+[class*='scroll_window'] .button {
+    margin: auto !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+[class*='values_to_choose'] {
+    max-height: 200px;
+}

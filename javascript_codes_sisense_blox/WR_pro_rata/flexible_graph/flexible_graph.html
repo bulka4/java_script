@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <link rel = 'stylesheet' href = 'flexible_graph.css'>
+    <!-- <script defer src = 'flexible_graph.js'></script> -->
+</head>
+<body>
+    <div id='flexible_graph'>
+        <div>
+            <div style='display: inline-block; position: relative; vertical-align: top; text-align: center;'>
+                <span>Columns for filters</span>  
+                <div style='margin-left: 5%'>
+                    <ul class='scroll_window' id='columns_for_filters'></ul>
+                </div>
+            </div>
+            <div style='display: inline-block; margin-left: 20px; vertical-align: top; text-align: center;'> 
+                <span>Categories</span> 
+                <div style='margin-left: 5%'>
+                    <ul class='scroll_window' id='categories_to_choose'></ul>
+                </div>
+            </div>
+            <div style='display: inline-block; margin-left: 20px; vertical-align: top; text-align: center;'>
+                <span>Values</span> 
+                <div style='margin-left: 5%'>
+                    <ul class='scroll_window' id='values_to_choose'></ul>
+                </div>
+            </div>
+            <div style='display: inline-block; margin-left: 20px; vertical-align: top; text-align: center;'>
+                <span>Break by</span>  
+                <div style='margin-left: 5%'>
+                    <ul class='scroll_window' id='break_by_to_choose'></ul>
+                </div>
+            </div>
+            <div style='display: inline-block; position: relative; top: 30px; margin-left: 20px;'>
+                <button class='apply button' id='apply_button'>Apply</button> 
+            </div>
+        </div>
+
+        <!-- div where new modals, created by js, will be placed -->
+        <div class = 'modals'></div>
+    </div>
+
+    <script defer src = 'flexible_graph.js'></script>
+</body>
+</html>

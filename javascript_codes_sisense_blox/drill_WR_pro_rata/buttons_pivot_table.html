@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel = 'stylesheet' href = 'buttons_pivot_table.css'>
+</head>
+<body>
+    <div id='buttons_widget'>
+        <div style='height: 320px; width: 100%; text-align: center'>
+            <div id='saved_configs' class='dropdown-check-list' tabindex='100' ,style='vertical-align: top; padding-right: 10px'><span class='anchor'>Saved configurations</span>
+                <ul class='items'></ul>
+            </div>
+            <div id='rows_drop_list' class='dropdown-check-list' tabindex='100' ,style='vertical-align: top; padding-right: 10px'><span class='anchor'>Select rows</span>
+                <ul class='items'></ul>
+            </div>
+            <div id='values_drop_list' class='dropdown-check-list' tabindex='100' ,style='vertical-align: top; padding-right: 10px'><span class='anchor'>Select values</span>
+                <ul class='items'></ul>
+            </div>
+            <div class='dropdown-check-list visible' ,style='vertical-align: top; padding-right: 10px'>
+                <ul id='selected_rows' class='items'>Selected rows:</ul>
+            </div>
+            <div class='dropdown-check-list visible' ,style='vertical-align: top; padding-right: 10px'>
+                <ul id='selected_values' class='items'>Selected values:</ul>
+            </div>
+        </div>
+        <div style='width: 100%; text-align: center'>
+            <div style='display: inline-block; height: 95px; vertical-align: middle; padding-right: 10%'><button id='apply' class='my_button'>Apply</button><button id='reset' class='my_button'>Reset</button></div>
+            <div style='display: inline-block; height: 95px'>
+                <div><button id='save_config' class='my_button' style='width: 230px; height: 40px; margin: 5px 5px 5px 5px'>Save configuration as:</button><input type='text' id='input_config_name_to_save' placeholder='configuration name' style='width: 180px; height: 40px; margin: 5px 5px 5px 5px'></input>
+                </div>
+                <div><button id='remove_config' class='my_button' style='width: 230px; height: 40px; margin: 5px 5px 5px 5px'>Remove configuration:</button><input type='text' id='input_config_name_to_remove' placeholder='configuration name' style='width: 180px; height: 40px; margin: 5px 5px 5px 5px'></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src = 'buttons_pivot_table.js'></script>
+</body>
+</html>

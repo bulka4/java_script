@@ -1,0 +1,67 @@
+@media screen and (max-width: 1500px) {
+    #client_filters {
+        overflow: auto
+    }
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+}
+
+[class*='scroll_window'] {
+    max-height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    min-width: 150px;
+    min-height: 30px;
+    overflow-y: auto;
+}
+
+[class*='scroll_window'] .button {
+    margin: auto !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+#selected_client_filters .button {
+    width: 175px;
+}
+
+[class*='button'] {
+    display: block;
+    margin: 5px 5px 5px 5px !important;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.button:hover {
+    background-color: #cbd3dd !important;
+    color: black !important;
+}
+
+.button.selected:hover {
+    background-color: #cbd3dd !important;
+    color: black !important;
+}
+
+.button:active {
+    background-color: #003c7f !important;
+    color: white !important;
+}
+
+.button.selected:active {
+    background-color: #003c7f !important;
+    color: white !important;
+}
+
+.button.selected {
+    background-color: rgb(99, 156, 199) !important;
+    color: white !important;
+}
